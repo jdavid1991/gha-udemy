@@ -2,7 +2,7 @@ name: 03b - build node application
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 jobs:
   build:
     runs-on: ubuntu-latest
