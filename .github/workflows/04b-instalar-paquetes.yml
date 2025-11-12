@@ -16,5 +16,4 @@ jobs:
           sudo apt-get install jsonlint
       - name: Lint json
         run: jsonlint-php package.json
-      - name:
       
