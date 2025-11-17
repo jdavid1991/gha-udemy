@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Número Aleatorio
-        run: echo "RANDOM_NUMBER=$(shuf -i 1-10 -n 1)" >> $GITHUB_ENV
+        run: | 
+          echo "RANDOM_NUMBER=$(shuf -i 1-10 -n 1)" >> $GITHUB_ENV
 
       - name: Mostrar Número
-        run: echo "🎲 El valor del dado es: $RANDOM_NUMBER"
+        run: | 
+          echo "🎲 El valor del dado es: $RANDOM_NUMBER"
