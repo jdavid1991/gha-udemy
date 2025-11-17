@@ -1,0 +1,13 @@
+name: 06 - Número Aleatoreo entre 1 y 10
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Número Aleatorio
+        run: |
+          echo "{env_var}={random_number=$((1 + RANDOM % 10))}" >> "$GITHUB_ENV"
+          echo "El valor del dado es: $env_var"
