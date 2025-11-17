@@ -7,8 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - name: imprimir información OS y arquitectura
-        run: | 
-          echo "os:" ${{runner.os}}
-          echo "arch:" ${{ runner.arch}}
+        run: |
+          echo "os: ${{runner.os}}"
+          echo "arch: ${{ runner.arch}}"
