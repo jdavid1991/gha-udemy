@@ -9,5 +9,6 @@ jobs:
     steps:
       - name: Número Aleatorio
         run: |
-          echo "{env_var}={random_number=$((1 + RANDOM % 10))}" >> "$GITHUB_ENV"
-          echo "El valor del dado es: $env_var"
+          echo "{env_var}={value}" >> "$GITHUB_ENV"
+          random_number=$((1 + RANDOM % 10))
+          echo "El valor del dado es: $random_number"
