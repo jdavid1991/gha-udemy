@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Número Aleatorio
-        run: |
-          echo "{env_var}={value}" >> "$GITHUB_ENV"
-          random_number=$((1 + RANDOM % 10))
-          echo "El valor del dado es: $random_number"
+        run: echo "RANDOM_NUMBER=$((1 + RANDOM % 10))" >> $GITHUB_ENV
+
+      - name: Mostrar Número
+        run: echo "🎲 El valor del dado es: $RANDOM_NUMBER"
