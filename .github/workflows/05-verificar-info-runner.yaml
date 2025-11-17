@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: imprimir información OS
-        run: echo ${{runner.os}}
+        run: echo  ${{"os": runner.os}}
       - name: imprimir arquitectura
-        run: echo ${{runner.arch}}
+        run: echo ${{"arch": runner.arch}}
