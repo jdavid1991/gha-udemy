@@ -1,4 +1,4 @@
-name: 06 - Número Aleatoreo entre 1 y 10
+name: 06b-variable-entre-steps
 on:
   push:
     branches: ["master"]
