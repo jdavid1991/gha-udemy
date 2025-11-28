@@ -1,7 +1,8 @@
 name: 02-Evento issue
 on:
   push:
-    issues:
+  issues:
+    types:
       - opened
 jobs:
   hola-mundo:
