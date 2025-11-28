@@ -2,7 +2,7 @@
 name: 01b Hola Mundo ejercicio-hola-mundo
 on:
   workflow_dispatch:
-    push:
+  push:
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest
