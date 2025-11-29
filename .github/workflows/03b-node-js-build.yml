@@ -2,7 +2,7 @@ name: 03b-node-js-build
 on:
   push:
     branches:
-      - "master"
+      - 'master'
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest
@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
         with:
-          node: 20
+          node-version: 20
       - run: npm ci
       - run: npm test
