@@ -1,0 +1,14 @@
+name: 03b-node-js-build
+on:
+  push:
+    branches:
+      - 'master'
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm test
