@@ -1,4 +1,4 @@
-name: 03b-node-js-build
+name: 03b - build node application
 on:
   push:
     branches:
