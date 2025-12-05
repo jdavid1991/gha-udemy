@@ -1,4 +1,4 @@
-name: 05a - Ejercicio.
+name: 04b - instalar paquetes
 on:
   push:
     branches: ["master"]
