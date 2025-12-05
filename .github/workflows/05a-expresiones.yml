@@ -1,10 +1,8 @@
-name: 05a - Expresiones.
+name: 05a - Expresiones
 
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch:
-
 jobs:
   expresiones:
     runs-on: ubuntu-latest
