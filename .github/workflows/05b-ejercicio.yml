@@ -6,9 +6,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - name: Verificar version node
-       run: node --version
-     - name: instalar jsonlint
-       run: sudo apt-get install jsonlint
-     - name: Verificar package.json valido
-       run:  jsonlint-php ./package.json
+      - uses: actions/checkout@v5
+      - name: Verificar version node
+        run: node --version
+      - name: instalar jsonlint
+        run: |
+          sudo apt-get update
+          sudo apt-get install jsonlint
+      - name: Verificar package.json valido
+        run: jsonlint-php package.json
+
