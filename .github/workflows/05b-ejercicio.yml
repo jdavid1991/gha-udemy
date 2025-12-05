@@ -11,4 +11,4 @@ jobs:
      - name: instalar jsonlint
        run: sudo apt-get install jsonlint
      - name: Verificar package.json valido
-       run:  jsonlint-php package.json
+       run:  jsonlint-php ./package.json
