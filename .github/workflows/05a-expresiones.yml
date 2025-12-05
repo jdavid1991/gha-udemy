@@ -2,7 +2,7 @@ name: 05a - Expresiones
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 jobs:
   expresiones:
     runs-on: ubuntu-latest
