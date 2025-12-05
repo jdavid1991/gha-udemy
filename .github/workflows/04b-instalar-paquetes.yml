@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v5
       - name: Verificar version node
         run: node --version
-      - name: instalar jsonlint
+      - name: install jsonlint
         run: |
           sudo apt-get update
           sudo apt-get install jsonlint
