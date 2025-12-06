@@ -1,0 +1,12 @@
+name: 05b - Expresiones Ejercicio
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  expresiones:
+    runs-on: ubuntu-latest
+    steps:
+      - name: información sistema operativo y arquitectura
+        run: |
+          echo "os: ${{runner.os}}"
+          echo "arquitectura: ${{runner.arch}} "
