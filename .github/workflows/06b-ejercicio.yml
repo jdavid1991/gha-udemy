@@ -11,5 +11,5 @@ jobs:
         run: |
           echo "random_number=$((1 + RANDOM % 10))" >> "$GITHUB_ENV"
       - name:
-          run: echo "$random_number"
+          run: echo "número aleatorio es $random_number"
 
