@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - "master"
+  workflow_dispatch:
 jobs:
   random-num:
     runs-on: ubuntu-latest
