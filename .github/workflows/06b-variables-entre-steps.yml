@@ -1,4 +1,4 @@
-name: 06b - Ejercicio
+name: 06b - Pasar valores entre steps
 on:
   push:
     branches:
@@ -13,5 +13,7 @@ jobs:
           echo "random_number=$((1 + RANDOM % 10))" >> "$GITHUB_ENV"
 
       - name: Número aleatorio
-        run: echo "número aleatorio es ${{env.random_number}}"
+        run: | 
+          echo "número aleatorio es: ${{env.random_number}}"
+
 
