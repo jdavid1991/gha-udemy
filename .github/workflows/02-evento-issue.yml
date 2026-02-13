@@ -1,6 +1,8 @@
 name: 02b - Evento issue
 on:
   issues:
+    types:
+      - opened
   push:
     paths-ignore:
       - '**.md'
