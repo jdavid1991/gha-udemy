@@ -1,0 +1,14 @@
+name: 05b información runner
+on:
+  push:
+    branches: ['master']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Informacion sistema
+        run: | 
+          echo "operating system: ${{runner.os}}"
+          echo "architectura: ${{runner.arch}}"
+  
+
