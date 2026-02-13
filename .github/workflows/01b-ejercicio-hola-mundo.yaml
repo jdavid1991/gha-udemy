@@ -1,4 +1,4 @@
-name: 01b ejercicio hola mundo
+name: 01b Hola mundo
 on: 
   workflow_dispatch:
   push:
