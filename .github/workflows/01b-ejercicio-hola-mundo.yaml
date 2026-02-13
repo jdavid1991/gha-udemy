@@ -1,4 +1,4 @@
-name: 01a-hola-mundo
+name: 01b ejercicio hola mundo
 on:
   push:
 jobs:
