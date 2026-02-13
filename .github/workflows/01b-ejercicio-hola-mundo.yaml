@@ -1,5 +1,6 @@
 name: 01b ejercicio hola mundo
-on:
+on: 
+  workflow_dispatch:
   push:
 jobs:
   hola-mundo:
