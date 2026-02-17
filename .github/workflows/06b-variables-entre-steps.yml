@@ -12,4 +12,4 @@ jobs:
           echo "random_number=$((1 + RANDOM % 10))" >> "$GITHUB_ENV"
       - name: Leer resultados
         run: | 
-          echo "El valor del dado es: $random_number"
+          echo "El valor del dado es: ${{env.random_number}}"
