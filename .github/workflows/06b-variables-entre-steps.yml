@@ -1,7 +1,7 @@
 name: 06b - Pasar valores entre steps
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
 jobs:
   pasar_valores:
