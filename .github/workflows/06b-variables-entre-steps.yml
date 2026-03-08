@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generar números aleatorios
-        run: | 
+        run: |
           echo "random_number=$((1 + RANDOM % 10))" >> "$GITHUB_ENV"
       - name: Leer resultados
-        run: | 
+        run: |
           echo "El valor del dado es: $random_number"
