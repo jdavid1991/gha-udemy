@@ -1,4 +1,4 @@
-name: 10b - Entornos - Rama - Protegida
+name: 10b - Entornos - Rama - Protegida.
 on:
   push:
     branches: ["master", "release/*"]
