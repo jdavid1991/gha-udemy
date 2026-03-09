@@ -1,0 +1,14 @@
+name: 10b - Entornos - Rama - Protegida
+on:
+  push:
+    branches: ["master", "release/*"]
+  workflow_dispatch:
+jobs:
+  entornos:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: Verificar variable
+        run: echo ${{vars.UNA_VARIABLE}}
+      - name: Verificar secretos
+        run: echo ${{secrets.UN_SECRETO}}
